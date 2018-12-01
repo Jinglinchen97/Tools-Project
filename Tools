@@ -1,0 +1,13 @@
+import bs4 as bs
+import requests
+
+def get_sp500_codes():
+    sp500 = requests.get('http://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
+    soup = bs.BeautifulSoup(sp500.text, 'lxml')
+    table = soup.find('table', {'class': 'wikitable sortable'})
+    codes = []
+    for row in table.findAll('tr')[1:]:
+        code = row.findAll('td')[0].text
+        codes.append(code)
+
+    return codes
