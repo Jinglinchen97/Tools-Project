@@ -1,6 +1,6 @@
 # Tools-Project
 ### Description of the project:
-The goal of the project is to find the relationship between stock returns and stock-related news, and to provide a method for investor to predict the return of given stock. Investor can choose a stock index as stock universe to estimate the relationship, and a stock code to predict the return according to the regression result.
+The goal of the project is to find if there exist a relationship between stock returns and stock-related news, and to provide a method for investor to predict the return of given stock. Investor can choose a stock index as stock universe to estimate the relationship, and a stock code to predict the return according to the regression result.
 
 **The main steps**
 1. Get the stock codes of index constituents, and their most recently stock returns
@@ -10,6 +10,7 @@ The goal of the project is to find the relationship between stock returns and st
 5. Use the parameters estimated to predict return of given stock
 
 **About the result**
+
 The project provide the prediction of stock return according to its recently published news.
 
 ### Group name and Section:
@@ -91,4 +92,4 @@ driver = webdriver.Chrome(executable_path = 'YOUR OWN PATH TO CHROMEDRIVER')
 
 
 ### References:
-
+1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
