@@ -32,31 +32,26 @@ Sec 002
 Library need to be installed for crawling news from Yahoo Finance:
 ```
 !pip install requests
-
 ```
 ```
 !pip install bs4
-
 ```
 Since Yahoo Finance is a dymanic webpage, more news will be loaded through scrolling down, hence we install selenium to automate webpage
 ```
 !pip install selenium
-
 ```
 Library pandas, numpy and pandas_datareader for graping stock data:
 ```
 !pip install pandas
-
 ```
 ```
 !pip install pandas_datareader
-
 ```
 
 Library nltk, vaderSentiment.vaderSentiment for sentiment analysis:
 ```
-!pip install pandas_datareader
-
+!pip install nltk
+!pip install vaderSentiment
 ```
 (2) Import
 ```
@@ -81,7 +76,7 @@ import statsmodels.api as sm
 
 Run instruction:
 
-** As this is a program using the latest two days' data for prediction, latest two day's stock price need to be acquirable. You can only run the cell during stock opening day.
+* As this is a program using the latest two days' data for prediction, latest two day's stock price need to be acquirable. You can only run the cell during stock opening day.
 
 1. File "Tools Project Code.ipynb" in the master branch includes all codes need running; files in other branches have all beened merged into this main file;
 2. To start the project, you need to input the stock code (stock must be within one of the three pools: SP500,nasdaq100 and DJIA) you are interested in and select one pool the stock is from;
@@ -90,7 +85,17 @@ Run instruction:
 driver = webdriver.Chrome(executable_path = 'YOUR OWN PATH TO CHROMEDRIVER')
 ```
 
-
+To run the program, user need to initate an object, for example:
+```
+a = news_stock('MMM','DJIA')
+```
+then user need to call several functions to get desired result:
+```
+a.get_stock_return()
+a.get_sentiment()
+a.regress()
+a.prediction()
+```
 
 
 
