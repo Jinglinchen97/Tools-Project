@@ -110,7 +110,8 @@ There are 4 classes in the project.
     + _scrolling_down_page(self, stock_name):
     + _get_article_link(self, results_page):    
     + _get_article_content(self, all_links):    
-    + _article_format(self, article_content):   
+    + _article_format(self, article_content):  
+        + change article_content format for further text mining
     + web_crawling(self, stock_name):
         + crawl the news of stock_name by calling above functions
     + vader_comparison(self, article_texts):    
@@ -134,8 +135,11 @@ There are 4 classes in the project.
     + prediction(self)
         + use the OLS model to predict stock return
     + plot_scatter(self, stock_return)
+        + plot scatter points of sentiment results (compound, positive and negative) and stock return
     + plot_3D_scatter(self, stock_return)
+        + plot 3D scatter points of sentiment results (compound, positive and negative) and stock return
     + reg_scatter_plot(self, stock_return)
+        + plot scatter points and regression line of sentiment results and stock return
  
  
 
