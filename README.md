@@ -97,11 +97,26 @@ a.prediction()
 ```
 
 ## Class Structure Description:
-Classes:  
-* Context - provide the global context of stock to predict and stock universe to estimate relationship.  
-* news - inherited from Context, includes methods related to news crawling and sentiment analysis.  
-* stock - inherited from Context, includes methods of getting stock universe and stock returns.  
-* news_stock - inherited from news and stock, includes methods of making regression and prediction.  
-
+There are 4 classes in the project, functions in classes are similar to the above.  
+**Classes:**  
++ Context - provide the global context of stock to predict and stock universe to estimate relationship.  
++ news - inherited from Context, includes methods related to news crawling and sentiment analysis.  
+    + _scrolling_down_page(self, stock_name)
+    + _get_article_link(self, results_page)
+    + _get_article_content(self, all_links)
+    + _artical_format(self, artical_content)
+    + web_crawling(self, stock_name)
+    + vader_comparison(self, artical_texts)
++ stock - inherited from Context, includes methods of getting stock universe and stock returns.  
+    + _get_djia_return(self)
+    + _get_sp500_codes(self)
+    + _get_nasdaq100_codes(self)
+    + get_stock_return(self)
++ news_stock - inherited from news and stock, includes methods of making regression and prediction.  
+    + get_sentiment(self)
+    + regress(self)
+    + prediction(self)
+ 
+ 
 ## References:
 1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
