@@ -1,5 +1,6 @@
 # Tools-Project
-### Description of the project:
+## Description of the project:
+
 The goal of the project is to find if there exist a relationship between stock returns and stock-related news, and to provide a method for investor to predict the return of given stock. Investor can choose a stock index as stock universe to estimate the relationship, and a stock code to predict the return according to the regression result.
 
 **The main steps**
@@ -13,7 +14,8 @@ The goal of the project is to find if there exist a relationship between stock r
 
 The project provide the prediction of stock return according to its recently published news.
 
-### Group name and Section:
+## Group name and Section:
+
 **Contributors (in random order):**
 Nian Zhao (nz2294)
 Xinyue Ruan (xr2136)
@@ -24,7 +26,8 @@ Jinglin Chen (jc5059)
 Sec 002
 
 
-### Installation Instruction:
+## Installation Instruction:
+
 (1) Installtion
 Library need to be installed for crawling news from Yahoo Finance:
 ```
@@ -74,7 +77,8 @@ import statsmodels.api as sm
 
 
 
-### Run Instructions:
+## Run Instructions:
+
 Run instruction:
 
 ** As this is a program using the latest two days' data for prediction, latest two day's stock price need to be acquirable. You can only run the cell during stock opening day.
@@ -91,5 +95,5 @@ driver = webdriver.Chrome(executable_path = 'YOUR OWN PATH TO CHROMEDRIVER')
 
 
 
-### References:
+## References:
 1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
