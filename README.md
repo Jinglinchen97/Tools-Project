@@ -76,11 +76,15 @@ import statsmodels.api as sm
 ### Run Instructions:
 Run instruction:
 
-** Considering the news and stock prices are real-time information, you can only run the cell during opening date.
+** As this is a program using the latest two days' data for prediction, latest two day's stock price need to be acquirable. You can only run the cell during stock opening day.
 
-1. All codes are included in “Tools Project Code” file;
-2. To start the project, you need to input the stock code (AAPL, GOOG, etc.) you are interested in and select the stock pool where the stock you chosen in;
-3. For the chromedriver in selenium, we need to download chromedriver.exe and add the path into the parenthesis of driver = webdriver.chrome();
+1. File "Tools Project Code.ipynb" in the master branch includes all codes need running; files in other branches have all beened merged into this main file;
+2. To start the project, you need to input the stock code (stock must be within one of the three pools: SP500,nasdaq100 and DJIA) you are interested in and select one pool the stock is from;
+3. For the chromedriver in selenium, we need to download chromedriver.exe (download link: https://sites.google.com/a/chromium.org/chromedriver/home） and replace the path with your own path to chromedriver;
+```
+driver = webdriver.Chrome(executable_path = 'YOUR OWN PATH TO CHROMEDRIVER')
+```
+
 
 
 
