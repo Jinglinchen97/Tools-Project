@@ -120,3 +120,10 @@ There are 4 classes in the project, functions in classes are similar to the abov
  
 ## References:
 1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
+
+### Appendix  
+|File Name|Description|
+|---|---|
+|Tools Project Code - Class Version.ipynb|This class-version codes structure all codes into several classes, which gives a clearer clue for each step|
+|Tools Project Code-Raw Version.ipynb|This raw-version file is better for learner to interpret all codes, which documents the progress we built this program step by step|
+|Tools Project Code-Test Result.ipynb|As chromdriver can't execute under VM, we upload the after-running version and test result using AAPL as interested stock|
