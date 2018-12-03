@@ -99,10 +99,10 @@ a.prediction()
 
 ## Structure and Functions Description:
 Classes:  
-*Context - provide the global context of stock to predict and stock universe to estimate relationship.  
-*news - inherited from Context, includes methods related to news crawling and sentiment analysis.  
-*stock - inherited from Context, includes methods of getting stock universe and stock returns.  
-*news_stock - inherited from news and stock, includes methods of making regression and prediction.  
+* Context - provide the global context of stock to predict and stock universe to estimate relationship.  
+* news - inherited from Context, includes methods related to news crawling and sentiment analysis.  
+* stock - inherited from Context, includes methods of getting stock universe and stock returns.  
+* news_stock - inherited from news and stock, includes methods of making regression and prediction.  
 
 ## References:
 1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
