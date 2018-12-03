@@ -21,10 +21,10 @@ The project provide the prediction of stock return according to its recently pub
 ## Group name and Section:
 
 **Contributors (in random order):**
-Nian Zhao (nz2294)
-Xinyue Ruan (xr2136)
-Chaoyue Zheng (cz2529)
-Jinglin Chen (jc5059)
+Nian Zhao (nz2294)  
+Xinyue Ruan (xr2136)  
+Chaoyue Zheng (cz2529)  
+Jinglin Chen (jc5059)  
 
 **Section:**
 Sec 002
