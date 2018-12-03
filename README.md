@@ -108,8 +108,11 @@ There are 4 classes in the project.
 + **Context** - provide the global context of stock to predict and stock universe to estimate relationship.  
 + **news** - inherited from Context, includes methods related to news crawling and sentiment analysis.  
     + _scrolling_down_page(self, stock_name):
-    + _get_article_link(self, results_page):    
+        + scroll down the webpage to update more news
+    + _get_article_link(self, results_page):
+        + get news web link from the webpage scrolled down before
     + _get_article_content(self, all_links):    
+        + get news content from the link scrapped before
     + _article_format(self, article_content):  
         + change article_content format for further text mining
     + web_crawling(self, stock_name):
