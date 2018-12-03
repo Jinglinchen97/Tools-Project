@@ -103,25 +103,36 @@ a.reg_scatter_plot(stock_return)
 ```
 
 ## Class Structure Description:
-There are 4 classes in the project, functions in classes are similar to the above.  
+There are 4 classes in the project.  
 **Classes:**  
 + Context - provide the global context of stock to predict and stock universe to estimate relationship.  
 + news - inherited from Context, includes methods related to news crawling and sentiment analysis.  
-    + _scrolling_down_page(self, stock_name)
-    + _get_article_link(self, results_page)
-    + _get_article_content(self, all_links)
-    + _article_format(self, article_content)
-    + web_crawling(self, stock_name)
-    + vader_comparison(self, article_texts)
+    + _scrolling_down_page(self, stock_name):
+    + _get_article_link(self, results_page):    
+    + _get_article_content(self, all_links):    
+    + _article_format(self, article_content):   
+    + web_crawling(self, stock_name):
+        + crawl the news of stock_name by calling above functions
+    + vader_comparison(self, article_texts):    
+        + analyse the sentiment information in article text
 + stock - inherited from Context, includes methods of getting stock universe and stock returns.  
-    + _get_djia_return(self)
-    + _get_sp500_codes(self)
-    + _get_nasdaq100_codes(self)
-    + get_stock_return(self)
+    + _get_djia_return(self): 
+        + get all the stock codes of Dow Jones Industrial Average's constituents, called by self.get_stock_return()
+    + _get_sp500_codes(self): 
+        + get all the stock codes of Standard & Poor 500's constituents, called by self.get_stock_return()
+    + _get_nasdaq100_codes(self): 
+        + get all the stock codes of NASDAQ-100's constituents, called by self.get_stock_return()
+    + get_stock_return(self): 
+        + acquire the stock codes according to self.universe_condition by calling above functions
+        + get stock returns in last trade day
 + news_stock - inherited from news and stock, includes methods of making regression, prediction and visualization.  
-    + get_sentiment(self)
+    + get_sentiment(self):
+        + get the results of sentiment analysis of all the stocks in stock universe by calling self.web_crawling() and self.vader_comparison()
+        + divide the results into training set and test set
     + regress(self)
+        + make OLS regression on stock returns and sentiment results
     + prediction(self)
+        + use the OLS model to predict stock return
     + plot_scatter(self, stock_return)
     + plot_3D_scatter(self, stock_return)
     + reg_scatter_plot(self, stock_return)
