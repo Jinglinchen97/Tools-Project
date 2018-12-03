@@ -105,7 +105,7 @@ a.reg_scatter_plot(stock_return)
 ## Class Structure Description:
 There are 4 classes in the project.  
 **Classes:**  
-+ **Context* - provide the global context of stock to predict and stock universe to estimate relationship.  
++ **Context** - provide the global context of stock to predict and stock universe to estimate relationship.  
 + **news** - inherited from Context, includes methods related to news crawling and sentiment analysis.  
     + _scrolling_down_page(self, stock_name):
     + _get_article_link(self, results_page):    
