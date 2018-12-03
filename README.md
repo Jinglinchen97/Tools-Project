@@ -1,16 +1,16 @@
 # Tools-Project
 ### Description of the project:
-The goal of the project is to
+The goal of the project is to find the relationship between stock returns and stock-related news, and to provide a method for investor to predict the return of given stock. Investor can choose a stock index as stock universe to estimate the relationship, and a stock code to predict the return according to the regression result.
 
 **The main steps**
-1. Input stockcode(within S&P500) you want
-2. Get the updated two days' stock-related news from Yahoo Finance
-3. Get corresponding two days' stock return 
-4. 
-5.
+1. Get the stock codes of index constituents, and their most recently stock returns
+2. Get the updated two days' stock-related news of index constituents from Yahoo Finance
+3. Convert the quatitative news context into quantitative attitude index by sentiment analysis
+4. Make OLS regression on stock returns of index constituents and information extracted from news
+5. Use the parameters estimated to predict return of given stock
 
 **About the result**
-
+The project provide the prediction of stock return according to its recently published news.
 
 ### Group name and Section:
 **Contributors (in random order):**
