@@ -1,4 +1,6 @@
 # Tools-Project
+
+
 ## Description of the project:
 
 The goal of the project is to find if there exist a relationship between stock returns and stock-related news, and to provide a method for investor to predict the return of given stock. Investor can choose a stock index as stock universe to estimate the relationship, and a stock code to predict the return according to the regression result.
@@ -13,6 +15,8 @@ The goal of the project is to find if there exist a relationship between stock r
 **About the result**
 
 The project provide the prediction of stock return according to its recently published news.
+
+
 
 ## Group name and Section:
 
@@ -71,7 +75,6 @@ import statsmodels.api as sm
 ```
 
 
-
 ## Run Instructions:
 
 
@@ -84,7 +87,7 @@ import statsmodels.api as sm
 driver = webdriver.Chrome(executable_path = 'YOUR OWN PATH TO CHROMEDRIVER')
 ```
 
-To run the program, user need to initate an object, for example:
+4. To run the program, user need to initate an object, for example:
 ```
 a = news_stock('MMM','DJIA')
 ```
@@ -118,5 +121,14 @@ There are 4 classes in the project, functions in classes are similar to the abov
     + prediction(self)
  
  
+
+## Appendix  
+|File Name|Description|
+|---|---|
+|Tools Project Code - Class Version.ipynb|This class-version codes structure all codes into several classes, which gives a clearer clue for each step|
+|Tools Project Code-Raw Version.ipynb|This raw-version file is better for learner to interpret all codes, which documents the progress we built this program step by step|
+|Tools Project Code-Test Result.ipynb|As chromdriver can't execute under VM, we upload the after-running version with the corresponding test result using stock = AAPL, index = DJIA. Test version doesn't fully scroll down the news webpage. For fully scroll down, please refer the other two formal version|
+
+
 ## References:
 1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
