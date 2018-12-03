@@ -93,10 +93,13 @@ a = news_stock('MMM','DJIA')
 ```
 then user need to call several functions to get desired result:
 ```
-a.get_stock_return()
+stock_return=a.get_stock_return()
 a.get_sentiment()
 a.regress()
 a.prediction()
+a.plot_scatter(stock_return)
+a.plot_3D_scatter(stock_return)
+a.reg_scatter_plot(stock_return)
 ```
 
 ## Class Structure Description:
