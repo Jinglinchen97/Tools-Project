@@ -36,7 +36,7 @@ Library need to be installed for crawling news from Yahoo Finance:
 ```
 !pip install bs4
 ```
-Since Yahoo Finance is a dymanic webpage, more news will be loaded through scrolling down, hence we install selenium to automate webpage
+Since Yahoo Finance is a dynamic webpage, more news will be loaded through scrolling down, hence we install selenium to automate webpage
 ```
 !pip install selenium
 ```
@@ -74,11 +74,10 @@ import statsmodels.api as sm
 
 ## Run Instructions:
 
-Run instruction:
 
 * As this is a program using the latest two days' data for prediction, latest two day's stock price need to be acquirable. You can only run the cell during stock opening day.
 
-1. File "Tools Project Code.ipynb" in the master branch includes all codes need running; files in other branches have all beened merged into this main file;
+1. File "Tools Project Code.ipynb" in the master branch includes all codes need running; files in other branches have all been merged into this main file;
 2. To start the project, you need to input the stock code (stock must be within one of the three pools: SP500,nasdaq100 and DJIA) you are interested in and select one pool the stock is from;
 3. For the chromedriver in selenium, we need to download chromedriver.exe (download link: https://sites.google.com/a/chromium.org/chromedriver/home） and replace the path with your own path to chromedriver;
 ```
@@ -97,7 +96,7 @@ a.regress()
 a.prediction()
 ```
 
-## Structure and Functions Description:
+## Class Structure Description:
 Classes:  
 * Context - provide the global context of stock to predict and stock universe to estimate relationship.  
 * news - inherited from Context, includes methods related to news crawling and sentiment analysis.  
