@@ -6,7 +6,7 @@ The goal of the project is to find if there exist a relationship between stock r
 **The main steps**
 1. Get the stock codes of index constituents, and their most recently stock returns
 2. Get the updated two days' stock-related news of index constituents from Yahoo Finance
-3. Convert the quatitative news context into quantitative attitude index by sentiment analysis
+3. Convert the quatitative news content into quantitative attitude index by sentiment analysis
 4. Make OLS regression on stock returns of index constituents and information extracted from news
 5. Use the parameters estimated to predict return of given stock
 
@@ -97,8 +97,12 @@ a.regress()
 a.prediction()
 ```
 
-
-
+## Structure and Functions Description:
+Classes:  
+*Context - provide the global context of stock to predict and stock universe to estimate relationship.  
+*news - inherited from Context, includes methods related to news crawling and sentiment analysis.  
+*stock - inherited from Context, includes methods of getting stock universe and stock returns.  
+*news_stock - inherited from news and stock, includes methods of making regression and prediction.  
 
 ## References:
 1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
