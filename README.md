@@ -107,18 +107,21 @@ There are 4 classes in the project, functions in classes are similar to the abov
     + _scrolling_down_page(self, stock_name)
     + _get_article_link(self, results_page)
     + _get_article_content(self, all_links)
-    + _artical_format(self, artical_content)
+    + _article_format(self, article_content)
     + web_crawling(self, stock_name)
-    + vader_comparison(self, artical_texts)
+    + vader_comparison(self, article_texts)
 + stock - inherited from Context, includes methods of getting stock universe and stock returns.  
     + _get_djia_return(self)
     + _get_sp500_codes(self)
     + _get_nasdaq100_codes(self)
     + get_stock_return(self)
-+ news_stock - inherited from news and stock, includes methods of making regression and prediction.  
++ news_stock - inherited from news and stock, includes methods of making regression, prediction and visualization.  
     + get_sentiment(self)
     + regress(self)
     + prediction(self)
+    + plot_scatter(self, stock_return)
+    + plot_3D_scatter(self, stock_return)
+    + reg_scatter_plot(self, stock_return)
  
  
 
