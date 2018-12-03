@@ -74,6 +74,14 @@ import statsmodels.api as sm
 
 
 ### Run Instructions:
+Run instruction:
+
+** Considering the news and stock prices are real-time information, you can only run the cell during opening date.
+
+1. All codes are included in “Tools Project Code” file;
+2. To start the project, you need to input the stock code (AAPL, GOOG, etc.) you are interested in and select the stock pool where the stock you chosen in;
+3. For the chromedriver in selenium, we need to download chromedriver.exe and add the path into the parenthesis of driver = webdriver.chrome();
+
 
 
 
