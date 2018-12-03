@@ -87,7 +87,7 @@ import statsmodels.api as sm
 driver = webdriver.Chrome(executable_path = 'YOUR OWN PATH TO CHROMEDRIVER')
 ```
 
-To run the program, user need to initate an object, for example:
+4. To run the program, user need to initate an object, for example:
 ```
 a = news_stock('MMM','DJIA')
 ```
