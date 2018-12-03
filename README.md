@@ -1,4 +1,6 @@
 # Tools-Project
+
+
 ## Description of the project:
 
 The goal of the project is to find if there exist a relationship between stock returns and stock-related news, and to provide a method for investor to predict the return of given stock. Investor can choose a stock index as stock universe to estimate the relationship, and a stock code to predict the return according to the regression result.
@@ -121,7 +123,7 @@ There are 4 classes in the project, functions in classes are similar to the abov
 ## References:
 1. https://pythonprogramming.net/sp500-company-price-data-python-programming-for-finance/
 
-### Appendix  
+## Appendix  
 |File Name|Description|
 |---|---|
 |Tools Project Code - Class Version.ipynb|This class-version codes structure all codes into several classes, which gives a clearer clue for each step|
